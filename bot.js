@@ -20,7 +20,7 @@ const gif = require("gif-search");
 
 const client = new Discord.Client({disableEveryone: true});
 
-const prefix = "1";
+const prefix = "2";
 /////////////////////////
 ////////////////////////
 
@@ -602,13 +602,13 @@ function play(guild, song) {
 
 client.on('message', message => {
 
-    if (message.content === '1help') {
+    if (message.content === '2help') {
 
         let helpEmbed = new Discord.RichEmbed()
 
         .setTitle('**أوامر الميوزك...**')
 
-        .setDescription('**(1) برفكس البوت **')
+        .setDescription('**(2) برفكس البوت **')
 
         .addField('play', 'لتشغيل اغنية')
 
@@ -674,7 +674,7 @@ client.on('ready', () => {
 
   console.log(`Logged in as ${client.user.tag}!`);
 
-client.user.setGame(`1play`,"http://twitch.tv/S-F")
+client.user.setGame(`2play`,"http://twitch.tv/S-F")
 
 client.user.setStatus("online")
 
